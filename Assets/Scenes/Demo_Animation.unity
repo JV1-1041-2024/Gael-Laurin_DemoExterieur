@@ -14246,41 +14246,41 @@ MonoBehaviour:
           z: 0.000000045364445
           w: 0.99999607
     - Position:
-        x: 5.9323654
+        x: 5.9000015
         y: 0
-        z: 39.400303
+        z: 38.05
       TangentIn:
         x: 0
         y: 0
-        z: -1.111973
+        z: -1.1844448
       TangentOut:
         x: 0
         y: 0
-        z: 1.111973
+        z: 1.1844448
       Rotation:
         value:
-          x: -0.000000024248749
-          y: -0.50221896
-          z: 0.00000004175245
-          w: 0.86474043
+          x: -0.00000001505366
+          y: -0.34651774
+          z: 0.00000004075113
+          w: 0.9380435
     - Position:
-        x: -10.995712
+        x: -9.980003
         y: 0
-        z: 39.40737
+        z: 37.16
       TangentIn:
         x: 0
         y: 0
-        z: -2.9646933
+        z: -2.2896488
       TangentOut:
         x: 0
         y: 0
-        z: 2.9646933
+        z: 2.2896488
       Rotation:
         value:
-          x: -0.00000012979952
-          y: 0.9888602
-          z: -0.00000063106404
-          w: -0.1488473
+          x: -0.0000000332772
+          y: 0.9989458
+          z: 0.00000000152926
+          w: -0.04590674
     - Position:
         x: -10.805794
         y: 0
@@ -67308,7 +67308,7 @@ MonoBehaviour:
   m_LoopMode: 1
   m_Method: 0
   m_Duration: 30
-  m_MaxSpeed: 5.7026105
+  m_MaxSpeed: 5.546594
   m_EasingMode: 0
   m_AlignmentMode: 1
   m_ObjectForwardAxis: 2
@@ -76502,7 +76502,7 @@ MonoBehaviour:
   m_ScreenY: 0.5
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
-  m_SoftZoneWidth: 0.8
+  m_SoftZoneWidth: 0.85
   m_SoftZoneHeight: 0.8
   m_BiasX: 0
   m_BiasY: 0
