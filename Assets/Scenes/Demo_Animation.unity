@@ -3767,7 +3767,7 @@ GameObject:
   - component: {fileID: 100889050}
   - component: {fileID: 100889049}
   m_Layer: 0
-  m_Name: Virtual Camera (1)
+  m_Name: Camera2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3791,7 +3791,7 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 1562850814}
+  m_LookAt: {fileID: 1797529718}
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60.000004
@@ -3820,7 +3820,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100889048}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.009149382, y: 0.982913, z: -0.050907582, w: -0.17665438}
+  m_LocalRotation: {x: 0.11948632, y: -0.7366711, z: 0.13505156, w: 0.6517668}
   m_LocalPosition: {x: 249.64618, y: 8.96, z: 299}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4453,57 +4453,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 115723446}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &116710420
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 116710421}
-  - component: {fileID: 116710422}
-  m_Layer: 5
-  m_Name: CameraChanger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &116710421
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 116710420}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 211932700}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &116710422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 116710420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ba46943f7b0d9a4a91e4e3c008d5528, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cams:
-  - {fileID: 326473829}
-  - {fileID: 100889049}
 --- !u!1001 &117558369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8666,7 +8615,6 @@ RectTransform:
   m_Children:
   - {fileID: 851128427}
   - {fileID: 524697483}
-  - {fileID: 116710421}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -13565,7 +13513,7 @@ GameObject:
   - component: {fileID: 326473830}
   - component: {fileID: 326473829}
   m_Layer: 0
-  m_Name: Virtual Camera
+  m_Name: Camera1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13587,7 +13535,7 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 10
+  m_Priority: 11
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 1562850814}
   m_Follow: {fileID: 0}
@@ -17935,7 +17883,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1200368573225118, guid: 571a69f902adb9846a5eabd744415ecc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1797529721}
   m_SourcePrefab: {fileID: 100100000, guid: 571a69f902adb9846a5eabd744415ecc, type: 3}
 --- !u!1001 &435045448
 PrefabInstance:
@@ -22317,14 +22269,26 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 116710422}
-        m_TargetAssemblyTypeName: CameraChangerScript, Assembly-CSharp
-        m_MethodName: ChangeCamera
+      - m_Target: {fileID: 100889049}
+        m_TargetAssemblyTypeName: Cinemachine.CinemachineVirtualCameraBase, Cinemachine
+        m_MethodName: set_Priority
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 11
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 326473829}
+        m_TargetAssemblyTypeName: Cinemachine.CinemachineVirtualCameraBase, Cinemachine
+        m_MethodName: set_Priority
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -23551,6 +23515,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4439479893536876, guid: 3a86fabd48459fb408a2892102efbd6a,
     type: 3}
   m_PrefabInstance: {fileID: 551071248}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &551999851 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1200368573225118, guid: 571a69f902adb9846a5eabd744415ecc,
+    type: 3}
+  m_PrefabInstance: {fileID: 432168237}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &552277502
 PrefabInstance:
@@ -34516,9 +34486,33 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 116710422}
-        m_TargetAssemblyTypeName: CameraChangerScript, Assembly-CSharp
-        m_MethodName: ChangeCamera
+      - m_Target: {fileID: 326473829}
+        m_TargetAssemblyTypeName: Cinemachine.CinemachineVirtualCameraBase, Cinemachine
+        m_MethodName: set_Priority
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 11
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 100889049}
+        m_TargetAssemblyTypeName: Cinemachine.CinemachineVirtualCameraBase, Cinemachine
+        m_MethodName: set_Priority
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1562850815}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Play
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -72408,6 +72402,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 432168237}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1797529721
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551999851}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2eed4aa0649e75d45816c97760100383, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1799915295
 PrefabInstance:
   m_ObjectHideFlags: 0
