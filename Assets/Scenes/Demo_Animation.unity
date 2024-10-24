@@ -10549,7 +10549,7 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 1657568028}
+  m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60.000004
@@ -10578,13 +10578,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 257217854}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.29373273, y: -0.65003544, z: 0.3018813, w: 0.63248926}
-  m_LocalPosition: {x: -54.061157, y: 32.487007, z: 21.957384}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1874011781}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1657568028}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &259597857
 GameObject:
@@ -67399,7 +67399,8 @@ Transform:
   m_LocalPosition: {x: -80.64, y: 1, z: 21.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 257217856}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1659925453
@@ -87035,7 +87036,6 @@ SceneRoots:
   - {fileID: 1543239391}
   - {fileID: 326473830}
   - {fileID: 100889050}
-  - {fileID: 257217856}
   - {fileID: 211932700}
   - {fileID: 707666734}
   - {fileID: 332514866}
