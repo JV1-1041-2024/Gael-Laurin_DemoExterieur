@@ -17,6 +17,7 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space)) jumpBuffer = 10;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
